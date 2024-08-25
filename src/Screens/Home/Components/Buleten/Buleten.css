@@ -1,0 +1,62 @@
+.buleten-title{
+    width: 128px;
+    height: 45px;
+    color: #116A6C;
+    font-family: 'sora','sensrif';
+    font-weight: 600;
+    line-height: 45.36px;
+    size: 36px;
+    font-size:x-large;
+}
+
+
+.right-side {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  select {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 10px;
+    background-color: #cfe8e4;
+    color: #3a3a3a;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  select:focus {
+    outline: none;
+  }
+  
+  .checkbox {
+    display: flex;
+    align-items: center;
+    padding: 8px 12px;
+    background-color: #cfe8e4;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .checkbox input[type="checkbox"] {
+    accent-color: #2a9d8f;
+    margin-right: 8px;
+  }
+  
+  .checkbox span {
+    font-size: 14px;
+    color: #3a3a3a;
+  }
+  
+  .mdMenu{
+    background-color: #cfe8e4;
+    width: 48px;
+    height: 34px;
+    border-radius: 4px;
+    padding: 2px 2px 2px 12px;
+  }
+  
+  .icon-md{
+    font-size: x-large;
+  }

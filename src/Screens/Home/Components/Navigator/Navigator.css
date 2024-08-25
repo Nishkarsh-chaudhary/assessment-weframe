@@ -1,0 +1,42 @@
+/* Header Styles */
+.header{
+    background-color: #fff; /* Gray-800 equivalent */
+    color:#62C3C6;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px; /* Adjust padding as needed */
+    margin-top: 10px;
+  }
+ 
+  .header .navi {
+    display: flex;
+    gap: 44px; /* Space between links */
+  }
+  
+  .header .navi a {
+    color:   #62C3C6;
+    text-decoration: none;
+  }
+  .header .navi .link-3{
+    color: #045A5C;
+    font-weight: 700;
+  }
+  
+  .header .nav a:hover {
+    color: #28E3E9; /* Gray-400 equivalent */
+  }
+  
+  .Preisoptionen {
+    background-color: #fff; /* Background color for Anmelden */
+    border-radius: 24px 0 24px 0; /* Border-radius on top-left and bottom-right */
+    width: 223px;
+    height: 33px;
+    border: 2px solid #62C3C6;
+    text-align: center;
+  }
+  .Preisoptionen-link{
+    padding: 7px 20px 8px 20px ;
+    
+  }
+  

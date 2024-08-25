@@ -1,0 +1,9 @@
+.container {
+    max-width: 1280px; /* Equivalent to max-w-7xl */
+    padding-left: 1rem; /* Equivalent to px-4 */
+    padding-right: 1rem; /* Equivalent to px-4 */
+    margin-left: auto; /* Equivalent to mx-auto */
+    margin-right: auto; /* Equivalent to mx-auto */
+    z-index: 10; /* Equivalent to z-10 */
+    position: relative; /* To ensure z-index takes effect */
+}

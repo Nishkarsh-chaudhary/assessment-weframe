@@ -1,18 +1,14 @@
 /** @type {import('tailwindcss').Config} */
+
 module.exports = {
   content: [
-    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    './app/**/*.{js,ts,jsx,tsx}',    // For Next.js 13 with app directory
+    './pages/**/*.{js,ts,jsx,tsx}',  // For Next.js 12 and below (if using pages directory)
+    './components/**/*.{js,ts,jsx,tsx}', // Include your components directory
+    // Add any other paths where you use Tailwind classes
   ],
   theme: {
-    extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-      },
-    },
+    extend: {},
   },
   plugins: [],
 };
