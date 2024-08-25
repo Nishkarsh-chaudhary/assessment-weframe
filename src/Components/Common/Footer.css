@@ -77,14 +77,47 @@
   }
   
   @media (max-width: 768px) {
-    .container-footer{
-      flex-direction: column;
-      padding: 0 20px;
+    .footer {
+        height: auto; /* Adjust height for content on smaller screens */
+        margin-top: 100px; /* Adjust margin as needed */
     }
-  
+
+    .container-footer {
+        flex-direction: column;
+        padding: 0 20px;
+        align-items: center; /* Center align content */
+    }
+
     .links, .info, .hours {
-      text-align: center;
-      flex: 1;
+        text-align: center;
+        margin-bottom: 20px; /* Add space between sections */
     }
-  }
+
+    .links a {
+        margin: 5px 0;
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
+
+    .info p {
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
+
+    .hours p {
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
+
+    .hours h3 {
+        font-size: 16px; /* Adjust font size for smaller screens */
+    }
+
+    .legal {
+        margin-top: 10px; /* Adjust margin for better spacing */
+        text-align: center;
+    }
+
+    .legal a {
+        margin: 5px 0; /* Adjust margin for better spacing */
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
+}
   

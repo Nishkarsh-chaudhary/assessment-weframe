@@ -160,3 +160,52 @@ body {
     font-size: 1em;
   }
   
+  /* Mobile Styles */
+  @media (max-width: 768px) {
+    .sidebar {
+        width: 250px; /* Adjust sidebar width for mobile */
+    }
+
+    .sidebar-toggle {
+        right: -40px; /* Adjust toggle position for mobile */
+    }
+
+    .filter-content {
+        padding: 15px; /* Reduce padding for smaller screens */
+    }
+
+    .filter-title {
+        font-size: 1.3em; /* Adjust title font size for mobile */
+        margin-bottom: 15px;
+    }
+
+    .filter-subtitle {
+        font-size: 1em; /* Adjust subtitle font size for mobile */
+        margin-top: 15px;
+        margin-bottom: 8px;
+    }
+
+    .filter-section-two {
+        flex-direction: column; /* Stack buttons vertically on mobile */
+    }
+
+    .filter-section-two button,
+    .filter-section-three button {
+        width: 100%; /* Make buttons full width on mobile */
+        margin-bottom: 10px;
+    }
+
+    .filter-range-label {
+        font-size: 0.8em; /* Adjust range label font size */
+    }
+
+    .filter-button {
+        width: 100%; /* Make filter buttons full width */
+        margin: 10px 0; /* Adjust margin for better spacing */
+    }
+
+    .reset-button {
+        width: 100%; /* Make reset button full width */
+        margin-top: 10px; /* Adjust margin for better spacing */
+    }
+}

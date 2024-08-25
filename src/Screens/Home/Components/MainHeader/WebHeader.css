@@ -1,94 +1,101 @@
-/* Header Styles */
 .header {
-    background-color: #fff; /* Gray-800 equivalent */
-    color:  #045A5C;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px; /* Adjust padding as needed */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #fff;
+  position: relative;
+  z-index: 1000; /* Ensure header is above other content */
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+}
+
+.search-bar input {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.search-icon {
+  margin-left: 0.5rem;
+}
+
+.nav {
+  display: flex;
+  gap: 1rem;
+}
+
+.right-side {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.anmelden {
+  background-color: #ECFEAA; /* Background color for Anmelden */
+  border-radius: 24px 0; /* Border-radius on top-left and bottom-right */
+  width: 110px;
+  height: 33px;
+  z-index: 1001; /* Ensure Anmelden button is above other elements */
+}
+
+.anmelden-link {
+  padding: 7px 18px 8px 18px;
+}
+
+.hamburger-menu {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  z-index: 1002; /* Ensure hamburger menu is above other elements */
+}
+
+.mobile-nav {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  position:relative;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  padding: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1003; /* Ensure mobile navigation is above other content */
+}
+
+.mobile-nav a {
+  padding: 0.5rem 0;
+  text-decoration: none;
+  color: #000;
+}
+
+.mobile-anmelden {
+  margin-top: 1rem;
+}
+
+/* Show the hamburger menu and mobile nav on mobile devices */
+@media (max-width: 768px) {
+  .nav {
+    display: none;
   }
-  
-  .header .search-bar {
-    display: flex;
-    align-items: center;
-    gap: 8px; /* Space between icon and input */
-    position: relative;
-    max-width: 366px; /* Adjust as needed */
-    height: 34px;
-    border-radius: 30px;
-    width: 100%;
+
+  .hamburger-menu {
+    display: block;
   }
-  
-  .header .search-bar input {
-    background-color: #EEF7F7; /* Gray-700 equivalent */
-    color:  #28E3E9;
-    padding-right: 16px; /* Adjust for right padding */
-    height: 34px; /* Adjust height as needed */
-    width: 100%;
-    border: 1px  #28E3E9; /* Border color */
-    border-radius: 9999px; /* Fully rounded */
-    box-sizing: border-box;
-    padding: 12px;
-  }
-  .header .search-icon {
-    color: #28E3E9; /* Gray-400 equivalent; change to desired color */
-    position: absolute;
-    right: 12px; /* Adjust position from the left */
-    top: 50%;
-    transform: translateY(-50%); 
-    pointer-events: none;
-  }
-  
-  .header .search-bar input:focus {
-    border: 2px solid #1d4ed8; /* Blue-500 equivalent */
-  }
-  
-  .header .nav {
-    display: flex;
-    gap: 44px; /* Space between links */
-  }
-  
-  .header .nav a {
-    color:  #045A5C;
-    text-decoration: none;
-  }
-  
-  .header .nav a:hover {
-    color: #28E3E9; /* Gray-400 equivalent */
-  }
-  
-  .header .right-side {
-    display: flex;
-    align-items: center;
-    gap: 16px; /* Space between icon and button */
-  }
-  
-  .header .right-side .shopping-cart {
-    color: #28E3E9; /* Gray-400 equivalent */
-    width: 22.4px;
-    height: 21px;
-    left: 1.6px;
-  }
-  
-  .header .right-side .button {
-    background-color: #3b82f6; /* Blue-500 equivalent */
-    color: white;
-    padding: 8px 16px;
-    border-radius: 8px; /* Rounded-lg equivalent */
-    border: none;
-    cursor: pointer;
-  }
-  
-  .header .right-side .button:hover {
-    background-color: #2563eb; /* Blue-600 equivalent */
-  }
+
   .anmelden {
-    background-color: #ECFEAA; /* Background color for Anmelden */
-    border-radius: 24px 0; /* Border-radius on top-left and bottom-right */
-    width: 110px;
-    height: 33px;
+    display: block;
   }
-  .anmelden-link{
-    padding: 7px 18px 8px 18px ;
+
+  .mobile-nav {
+    display: flex;
   }
-  
+
+  .header {
+    background-color: #fff; /* Ensure white background for header on mobile */
+  }
+}

@@ -60,3 +60,13 @@
   .icon-md{
     font-size: x-large;
   }
+
+  @media (max-width: 768px) {
+    .buleten-title,
+    .right-side,
+    select,
+    .checkbox,
+    .mdMenu {
+        display: none; /* Hide the component on mobile devices */
+    }
+}
